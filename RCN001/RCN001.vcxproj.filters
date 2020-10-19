@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Code Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Code Files\Common">
+      <UniqueIdentifier>{4947c6d2-4198-4c64-bf41-525245fa75e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code Files\Common\Core">
+      <UniqueIdentifier>{b3a7ff45-e152-45ee-8c9e-32bed9135948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code Files\PC">
+      <UniqueIdentifier>{6e1da930-10cf-40fe-a523-ca417c652847}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code Files\Common\Game">
+      <UniqueIdentifier>{d29ae731-84f0-4b77-8052-003bc2d04eb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RCN">
+      <UniqueIdentifier>{dbce8550-4034-49ad-af3b-a664b9979aa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code Files\Common\Screens">
+      <UniqueIdentifier>{889a2d92-8524-4c9a-9211-afbddcdb19ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PC\AppPC.cpp">
+      <Filter>Code Files\PC</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Core\App.cpp">
+      <Filter>Code Files\Common\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\AppMain.cpp">
+      <Filter>Code Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\stdheader.cpp">
+      <Filter>Code Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Game\Game.cpp">
+      <Filter>Code Files\Common\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNUtil.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNTimer.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNMemUtil.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNScreenController.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNScreen.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Screens\BootstrapScreen.cpp">
+      <Filter>Code Files\Common\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Screens\MenuScreen.cpp">
+      <Filter>Code Files\Common\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNThread.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNJob.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNJobQueue.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNLinkedList.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNCriticalSection.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNSemaphore.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Core\AssetLoader.cpp">
+      <Filter>Code Files\Common\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Core\TextureManager.cpp">
+      <Filter>Code Files\Common\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNTexture.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNLighting.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCN3D.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNRenderer.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNCube.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNCamera.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNModel.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNLight.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNMaterial.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNString.cpp">
+      <Filter>RCN</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNInput.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Screens\GameScreen.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Core\ModelManager.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNButton.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Screens\LoadingScreen.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Core\Player.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNTerrain.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNNoise.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNTerrainBlock.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\TinyXML2\tinyxml2.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Game\Level.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Game\Demo.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\Audio\RCNXAudio2.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\Audio\RCNOpenAL.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\Audio\RCNOpenSL.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\Audio\RCNAudioSource.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\compat.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\dct64.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\equalizer.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\feature.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\format.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\frame.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\icy.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\icy2utf8.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\id3.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\index.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\layer1.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\layer2.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\layer3.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\libmpg123.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\msvc.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\ntom.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\optimize.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\parse.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\readers.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\stringbuf.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\synth.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\synth_8bit.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\synth_real.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\synth_s32.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\tabinit.c">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\Audio\RCNMP3.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNFile.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\RCNFileSystem.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\Audio\RCNAudio.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\Audio\RCNXAudio2Source.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\Audio\RCNOpenALSource.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\Audio\RCNOpenSLSource.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RCN\Audio\RCNContainer.cpp">
+      <Filter>Code Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PC\AppPlatform.h">
+      <Filter>Code Files\PC</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Core\App.h">
+      <Filter>Code Files\Common\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\AppMain.h">
+      <Filter>Code Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\stdheader.h">
+      <Filter>Code Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Core\Definitions.h">
+      <Filter>Code Files\Common\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Game\Game.h">
+      <Filter>Code Files\Common\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNUtil.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNTimer.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNMemUtil.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNAssert.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNScreenController.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNScreen.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Screens\BootstrapScreen.h">
+      <Filter>Code Files\Common\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Screens\MenuScreen.h">
+      <Filter>Code Files\Common\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNThread.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNJob.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNJobQueue.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNLinkedList.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNCriticalSection.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNSemaphore.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Core\AssetLoader.h">
+      <Filter>Code Files\Common\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Core\TextureManager.h">
+      <Filter>Code Files\Common\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Core\TextureDefinitions.h">
+      <Filter>Code Files\Common\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNTexture.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNLighting.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCN3D.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNRenderer.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNCube.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNCamera.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNModel.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNLight.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNMaterial.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNTypes.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNString.h">
+      <Filter>RCN</Filter>
+    </ClInclude>
+    <ClInclude Include="RCN\RCNInput.h" />
+    <ClInclude Include="Common\Screens\GameScreen.h" />
+    <ClInclude Include="Common\Core\ModelDefinitions.h" />
+    <ClInclude Include="Common\Core\ModelManager.h" />
+    <ClInclude Include="RCN\RCNButton.h" />
+    <ClInclude Include="Common\Screens\LoadingScreen.h" />
+    <ClInclude Include="Common\Core\Player.h" />
+    <ClInclude Include="RCN\RCNTerrain.h" />
+    <ClInclude Include="RCN\RCNNoise.h" />
+    <ClInclude Include="RCN\RCNTerrainBlock.h" />
+    <ClInclude Include="RCN\ThirdParty\TinyXML2\tinyxml2.h" />
+    <ClInclude Include="Common\Game\Level.h" />
+    <ClInclude Include="Common\Game\Demo.h" />
+    <ClInclude Include="RCN\Audio\RCNAudio.h" />
+    <ClInclude Include="RCN\Audio\RCNOpenAL.h" />
+    <ClInclude Include="RCN\Audio\RCNOpenSL.h" />
+    <ClInclude Include="RCN\Audio\RCNXAudio2.h" />
+    <ClInclude Include="RCN\Audio\RCNAudioSource.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\compat.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\config.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\debug.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\decode.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\frame.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\gapless.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\getbits.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\getcpuflags.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\huffman.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\icy.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\icy2utf8.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\id3.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\index.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\intsym.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\l2tables.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\mangle.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\mpeghead.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\mpg123.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\mpg123lib_intern.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\optimize.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\parse.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\reader.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\sample.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\synth.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\synth_8bit.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\synth_mono.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\synth_ntom.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\synths.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\true.h" />
+    <ClInclude Include="RCN\Audio\RCNMP3.h" />
+    <ClInclude Include="RCN\RCNFile.h" />
+    <ClInclude Include="RCN\RCNFileSystem.h" />
+    <ClInclude Include="RCN\Audio\RCNXAudio2Source.h" />
+    <ClInclude Include="RCN\Audio\RCNOpenALSource.h" />
+    <ClInclude Include="RCN\Audio\RCNOpenSLSource.h" />
+    <ClInclude Include="RCN\Audio\RCNContainer.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,27 @@
+<Audio>
+	<Containers>
+		<Container id="1">
+			<Name>RCNMusic_Menu</Name>
+			<Stream>true</Stream>
+			<Loop>true</Loop>
+			<Volume>0.7</Volume>
+			<Source>Data/Audio/Menu.MP3</Source>
+		</Container>
+		
+		<Container id="2">
+			<Name>RCNMusic_InGame</Name>
+			<Stream>true</Stream>
+			<Loop>true</Loop>
+			<Volume>0.7</Volume>
+			<Source>Data/Audio/Game.MP3</Source>
+		</Container>
+		
+		<Container id="3">
+			<Name>RCNSFX_OnClick</Name>
+			<Stream>true</Stream>
+			<Loop>false</Loop>
+			<Volume>1.0</Volume>
+			<Source>Data/Audio/Button.MP3</Source>
+		</Container>
+	</Containers>
+</Audio>

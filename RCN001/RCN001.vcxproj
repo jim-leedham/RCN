@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Common\AppMain.cpp" />
+    <ClCompile Include="Common\Core\App.cpp" />
+    <ClCompile Include="Common\Core\AssetLoader.cpp" />
+    <ClCompile Include="Common\Core\ModelManager.cpp" />
+    <ClCompile Include="Common\Core\Player.cpp" />
+    <ClCompile Include="Common\Core\TextureManager.cpp" />
+    <ClCompile Include="Common\Game\Demo.cpp" />
+    <ClCompile Include="Common\Game\Game.cpp" />
+    <ClCompile Include="Common\Game\Level.cpp" />
+    <ClCompile Include="Common\Screens\BootstrapScreen.cpp" />
+    <ClCompile Include="Common\Screens\GameScreen.cpp" />
+    <ClCompile Include="Common\Screens\LoadingScreen.cpp" />
+    <ClCompile Include="Common\Screens\MenuScreen.cpp" />
+    <ClCompile Include="Common\stdheader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PC\AppPC.cpp" />
+    <ClCompile Include="RCN\Audio\RCNAudio.cpp" />
+    <ClCompile Include="RCN\Audio\RCNAudioSource.cpp" />
+    <ClCompile Include="RCN\Audio\RCNContainer.cpp" />
+    <ClCompile Include="RCN\Audio\RCNMP3.cpp" />
+    <ClCompile Include="RCN\Audio\RCNOpenAL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="RCN\Audio\RCNOpenALSource.cpp" />
+    <ClCompile Include="RCN\Audio\RCNOpenSL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="RCN\Audio\RCNOpenSLSource.cpp" />
+    <ClCompile Include="RCN\Audio\RCNXAudio2.cpp" />
+    <ClCompile Include="RCN\Audio\RCNXAudio2Source.cpp" />
+    <ClCompile Include="RCN\RCN3D.cpp" />
+    <ClCompile Include="RCN\RCNButton.cpp" />
+    <ClCompile Include="RCN\RCNCamera.cpp" />
+    <ClCompile Include="RCN\RCNCriticalSection.cpp" />
+    <ClCompile Include="RCN\RCNCube.cpp" />
+    <ClCompile Include="RCN\RCNFile.cpp" />
+    <ClCompile Include="RCN\RCNFileSystem.cpp" />
+    <ClCompile Include="RCN\RCNInput.cpp" />
+    <ClCompile Include="RCN\RCNJob.cpp" />
+    <ClCompile Include="RCN\RCNJobQueue.cpp" />
+    <ClCompile Include="RCN\RCNLight.cpp" />
+    <ClCompile Include="RCN\RCNLighting.cpp" />
+    <ClCompile Include="RCN\RCNLinkedList.cpp" />
+    <ClCompile Include="RCN\RCNMaterial.cpp" />
+    <ClCompile Include="RCN\RCNMemUtil.cpp" />
+    <ClCompile Include="RCN\RCNModel.cpp" />
+    <ClCompile Include="RCN\RCNNoise.cpp" />
+    <ClCompile Include="RCN\RCNRenderer.cpp" />
+    <ClCompile Include="RCN\RCNScreen.cpp" />
+    <ClCompile Include="RCN\RCNScreenController.cpp" />
+    <ClCompile Include="RCN\RCNSemaphore.cpp" />
+    <ClCompile Include="RCN\RCNString.cpp" />
+    <ClCompile Include="RCN\RCNTerrain.cpp" />
+    <ClCompile Include="RCN\RCNTerrainBlock.cpp" />
+    <ClCompile Include="RCN\RCNTexture.cpp" />
+    <ClCompile Include="RCN\RCNThread.cpp" />
+    <ClCompile Include="RCN\RCNTimer.cpp" />
+    <ClCompile Include="RCN\RCNUtil.cpp" />
+    <ClCompile Include="RCN\ThirdParty\mpg123\compat.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\dct64.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\equalizer.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\feature.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\format.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\frame.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\icy.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\icy2utf8.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\id3.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\index.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\layer1.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\layer2.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\layer3.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\libmpg123.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\msvc.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\ntom.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\optimize.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\parse.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\readers.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\stringbuf.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\synth.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\synth_8bit.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\synth_real.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\synth_s32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\mpg123\tabinit.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RCN\ThirdParty\TinyXML2\tinyxml2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\AppMain.h" />
+    <ClInclude Include="Common\Core\App.h" />
+    <ClInclude Include="Common\Core\AssetLoader.h" />
+    <ClInclude Include="Common\Core\Definitions.h" />
+    <ClInclude Include="Common\Core\ModelDefinitions.h" />
+    <ClInclude Include="Common\Core\ModelManager.h" />
+    <ClInclude Include="Common\Core\Player.h" />
+    <ClInclude Include="Common\Core\TextureDefinitions.h" />
+    <ClInclude Include="Common\Core\TextureManager.h" />
+    <ClInclude Include="Common\Game\Demo.h" />
+    <ClInclude Include="Common\Game\Game.h" />
+    <ClInclude Include="Common\Game\Level.h" />
+    <ClInclude Include="Common\Screens\BootstrapScreen.h" />
+    <ClInclude Include="Common\Screens\GameScreen.h" />
+    <ClInclude Include="Common\Screens\LoadingScreen.h" />
+    <ClInclude Include="Common\Screens\MenuScreen.h" />
+    <ClInclude Include="Common\stdheader.h" />
+    <ClInclude Include="PC\AppPlatform.h" />
+    <ClInclude Include="RCN\Audio\RCNAudio.h" />
+    <ClInclude Include="RCN\Audio\RCNAudioSource.h" />
+    <ClInclude Include="RCN\Audio\RCNContainer.h" />
+    <ClInclude Include="RCN\Audio\RCNMP3.h" />
+    <ClInclude Include="RCN\Audio\RCNOpenAL.h" />
+    <ClInclude Include="RCN\Audio\RCNOpenALSource.h" />
+    <ClInclude Include="RCN\Audio\RCNOpenSL.h" />
+    <ClInclude Include="RCN\Audio\RCNOpenSLSource.h" />
+    <ClInclude Include="RCN\Audio\RCNXAudio2.h" />
+    <ClInclude Include="RCN\Audio\RCNXAudio2Source.h" />
+    <ClInclude Include="RCN\RCN3D.h" />
+    <ClInclude Include="RCN\RCNAssert.h" />
+    <ClInclude Include="RCN\RCNButton.h" />
+    <ClInclude Include="RCN\RCNCamera.h" />
+    <ClInclude Include="RCN\RCNCriticalSection.h" />
+    <ClInclude Include="RCN\RCNCube.h" />
+    <ClInclude Include="RCN\RCNFile.h" />
+    <ClInclude Include="RCN\RCNFileSystem.h" />
+    <ClInclude Include="RCN\RCNInput.h" />
+    <ClInclude Include="RCN\RCNJob.h" />
+    <ClInclude Include="RCN\RCNJobQueue.h" />
+    <ClInclude Include="RCN\RCNLight.h" />
+    <ClInclude Include="RCN\RCNLighting.h" />
+    <ClInclude Include="RCN\RCNLinkedList.h" />
+    <ClInclude Include="RCN\RCNMaterial.h" />
+    <ClInclude Include="RCN\RCNMemUtil.h" />
+    <ClInclude Include="RCN\RCNModel.h" />
+    <ClInclude Include="RCN\RCNNoise.h" />
+    <ClInclude Include="RCN\RCNRenderer.h" />
+    <ClInclude Include="RCN\RCNScreen.h" />
+    <ClInclude Include="RCN\RCNScreenController.h" />
+    <ClInclude Include="RCN\RCNSemaphore.h" />
+    <ClInclude Include="RCN\RCNString.h" />
+    <ClInclude Include="RCN\RCNTerrain.h" />
+    <ClInclude Include="RCN\RCNTerrainBlock.h" />
+    <ClInclude Include="RCN\RCNTexture.h" />
+    <ClInclude Include="RCN\RCNThread.h" />
+    <ClInclude Include="RCN\RCNTimer.h" />
+    <ClInclude Include="RCN\RCNTypes.h" />
+    <ClInclude Include="RCN\RCNUtil.h" />
+    <ClInclude Include="RCN\ThirdParty\mpg123\compat.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\config.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\debug.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\decode.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\frame.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\gapless.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\getbits.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\getcpuflags.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\huffman.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\icy.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\icy2utf8.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\id3.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\index.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\intsym.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\l2tables.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\mangle.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\mpeghead.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\mpg123.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\mpg123lib_intern.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\optimize.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\parse.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\reader.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\sample.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\synth.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\synths.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\synth_8bit.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\synth_mono.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\synth_ntom.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\mpg123\true.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RCN\ThirdParty\TinyXML2\tinyxml2.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2F285A36-9C00-45F6-B552-9CEAF803971C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RCN001</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;RCNDEBUG;_DEBUG;D3D_DEBUG_INFO;_WINDOWS;RCNWINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>stdheader.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>Common;PC;RCN;$(DXSDK_DIR)include;</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)LIB\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d9.lib;d3dx9d.lib;DbgHelp.lib;x3daudio.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;RCNWINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeaderFile>stdheader.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>Common;PC;RCN;$(DXSDK_DIR)include;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d9.lib;d3dx9d.lib;x3daudio.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)LIB\x86</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
