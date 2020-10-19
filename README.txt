@@ -6,7 +6,7 @@ This fork deliberately contains very little game code; only a short demo designe
 to showcase the most commonly used features of the engine.
 
 Source code may be viewed:
-- In a web browser (at https://bitbucket.org/JimLeedham/rcn001-evaluation)
+- In a web browser
 - In Visual Studio (the provided solution file is compatible with Visual Studio 2012)
 - In another text editor 
 
